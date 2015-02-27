@@ -1,8 +1,5 @@
 body.home-template {
-  margin-top: 80px;
   background: #000;
-  background-size: 100%;
-  background-position: 0 80px;
 }
 
 ul, li {
@@ -10,19 +7,35 @@ ul, li {
   margin: 0;
 }
 
-.home-template footer  { width:100%; height:100px; background:#000; color:#fff; border-top:1px #262626 solid; margin-top:30px; padding-top:30px; }
-.home-template footer .footWrap .topRow .topRowleft .logo { display:block; text-indent:-9999px; background:url('../images/logoBottom.png') no-repeat center;  width:116px; height:21px; float:left; }
-.home-template footer div { background:inherit !important; color:inherit !important; }
+.home-template footer {
+  background:#000;
+  color:#fff;
+  border-top:1px #262626 solid;
+}
 
-.home-template footer .footWrap .topRow .topRowright .menu { float:right; color:#000; font-family: 'Open Sans', sans-serif; text-transform:uppercase; font-size:11px; height:12px; padding:0; }
+.home-template footer .footWrap .topRow .topRowleft .logo {
+  background:url('../images/logoBottom.png') no-repeat center;
+}
 
-.home-template footer .footWrap .bottomRow .bottomRowright li.pineterest { background:url('../images/small/pinterest.png'); width:12px; height:12px; }
-.home-template footer .footWrap .bottomRow .bottomRowright li.pineterest:hover { background-position:0 12px; }
-.home-template footer .footWrap .bottomRow .bottomRowright li.facebook { background:url('../images/small/facebook.png'); width:6px; height:12px; }
-.home-template footer .footWrap .bottomRow .bottomRowright li.facebook:hover { background-position:0 12px; }
-.home-template footer .footWrap .bottomRow .bottomRowright li.twitter { background:url('../images/small/twitter.png'); width:15px; height:12px; }
-.home-template footer .footWrap .bottomRow .bottomRowright li.twitter:hover { background-position:0 12px; }
-.home-template footer .footWrap .topRow .topRowright .menu a:hover { color:#ffeb0e; }
+.home-template footer .footWrap .bottomRow .bottomRowright li.pineterest {
+  background:url('../images/small/pinterest.png');
+}
+
+.home-template footer .footWrap .bottomRow .bottomRowright li.facebook {
+  background:url('../images/small/facebook.png');
+}
+
+.home-template footer .footWrap .bottomRow .bottomRowright li.twitter {
+  background:url('../images/small/twitter.png');
+}
+
+.home-template footer .footWrap .bottomRow .bottomRowright li.twitter:hover {
+  background-position:0 12px;
+}
+
+.home-template footer .footWrap .topRow .topRowright .menu a:hover {
+  color:#ffeb0e;
+}
 
 .sliders {
   background-repeat: no-repeat;
@@ -39,7 +52,6 @@ ul, li {
 .slider-2 {
   background-image: url('../images/sliders/glownaBG2.jpg');
 }
-
 
 .countdownHolder { width: 450px; font-family: 'Open Sans', sans-serif; font-weight:600; font-size: 40px; text-align: center; margin: 30px 0 0 0;}
 .position { display: inline-block; height: 60px; overflow: hidden; position: relative; width: 40px; }

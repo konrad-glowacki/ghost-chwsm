@@ -36,7 +36,7 @@
 
         $(document).on("click", ".round-arrow", function() {
           $('html, body').animate({
-            scrollTop: $(".post-content").offset().top - 130
+            scrollTop: $(".post-content, .content").offset().top - 130
           }, 1000);
         });
 
@@ -49,7 +49,7 @@
         });
 
         $('#countdown').countdown({
-          timestamp: Date.parse('02/26/2015 18:30')
+          timestamp: Date.parse('03/26/2015 18:30')
         });
 
         var $postContent = $(".post-content");

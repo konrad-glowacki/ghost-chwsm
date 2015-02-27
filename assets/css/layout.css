@@ -1,3 +1,7 @@
+body {
+  margin-top: 80px;
+}
+
 .clear {
   clear: both;
 }
@@ -22,21 +26,64 @@
   border-color: #FFEB0E;
 }
 
-.post-title {
+.main-header .post-title {
   color: #fff;
-  margin-top: 70px;
-  font-size: 100px;
+  margin-top: 120px;
+  font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
+  text-shadow: 2px 2px 8px #111;
 }
 
-.top { width:100%; background:#fff; height:80px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); position:fixed; top:0; z-index: 9999; }
-.top .topWrap, footer .footWrap { width:990px; margin:0 auto; }
-.top .logo { display:block; text-indent:-9999px; background:url('../images/logo.png') no-repeat center;  width:208px; height:38px; padding:21px 0; float:left; }
-.top .menu { float:right; color:#000; font-family: 'Open Sans', sans-serif; font-weight:600; text-transform:uppercase; font-size:12px; height:12px; padding:34px 0; }
-.top .menu li { list-style:none; float:left;   }
-.top .menu a { padding-bottom:10px; margin:0 40px 0 0; }
-.top .menu a:hover, .top .menu a.active { border-bottom:4px #ffeb0e solid; }
+.top {
+  width:100%;
+  background:#fff;
+  height:80px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  position:fixed;
+  top:0;
+  z-index: 9999;
+}
+
+.top .topWrap, footer .footWrap {
+  width:990px;
+  margin:0 auto;
+}
+
+.top .logo {
+  display:block;
+  text-indent:-9999px;
+  background:url('../images/logo.png') no-repeat center;
+  width:208px;
+  height:38px;
+  padding:21px 0;
+  float:left;
+}
+
+.top .menu {
+  float:right;
+  color:#000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
+  text-transform:uppercase;
+  font-size:12px;
+  height:12px;
+  padding:34px 0;
+}
+
+.top .menu li {
+  list-style:none;
+  float:left;
+}
+
+.top .menu a {
+  padding-bottom:10px;
+  margin:0 40px 0 0;
+}
+
+.top .menu a:hover, .top .menu a.active {
+  border-bottom:4px #ffeb0e solid;
+}
 
 .mainWrap {
   margin-top: 80px;
@@ -82,6 +129,18 @@
 
 a:hover {
   color:#0092d6;
+}
+
+.home-template .post a {
+  color: #0092d6;
+}
+
+.home-template .post a:hover {
+  color: #4DB3E2;
+}
+
+.home-template .post-excerpt {
+  color: #adadad;
 }
 
 .reular {
@@ -393,6 +452,77 @@ a:hover {
 
 .newsletter .success b {
   font-weight: 600;
+}
+
+/* FOOTER */
+
+footer  {
+  width:100%;
+  height:100px;
+  background:#fff;
+  color:#000;
+  border-top:1px #BEBEBE solid;
+  margin-top:30px;
+  padding-top:30px;
+}
+
+footer .footWrap .topRow .topRowleft .logo {
+  display:block;
+  text-indent:-9999px;
+  background:url('../images/logo.png') no-repeat center;
+  background-size: 100%;
+  width:116px;
+  height:21px;
+  float:left;
+}
+
+footer div {
+  background:inherit !important;
+  color:inherit !important;
+}
+
+footer .footWrap .topRow .topRowright .menu {
+  float:right;
+  color:#000;
+  font-family: 'Open Sans', sans-serif;
+  text-transform:uppercase;
+  font-size:11px;
+  height:12px;
+  padding:0;
+}
+
+footer .footWrap .bottomRow .bottomRowright li.pineterest {
+  background:url('../images/small/pinterest_dark.png');
+  width:12px;
+  height:12px;
+}
+
+footer .footWrap .bottomRow .bottomRowright li.pineterest:hover {
+  background-position:0 12px;
+}
+
+footer .footWrap .bottomRow .bottomRowright li.facebook {
+  background:url('../images/small/facebook_dark.png');
+  width:6px;
+  height:12px;
+}
+
+footer .footWrap .bottomRow .bottomRowright li.facebook:hover {
+  background-position:0 12px;
+}
+
+footer .footWrap .bottomRow .bottomRowright li.twitter {
+  background:url('../images/small/twitter_dark.png');
+  width:15px;
+  height:12px;
+}
+
+footer .footWrap .bottomRow .bottomRowright li.twitter:hover {
+  background-position:0 12px;
+}
+
+footer .footWrap .topRow .topRowright .menu a:hover {
+  color:#FF210E;
 }
 
 footer .footWrap {

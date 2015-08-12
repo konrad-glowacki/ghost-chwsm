@@ -49,7 +49,7 @@
         });
 
         $('#countdown').countdown({
-          timestamp: Date.parse('06/25/2015 18:30')
+          timestamp: Date.parse('08/27/2015 18:30')
         });
 
         var $postContent = $(".post-content");

@@ -218,7 +218,7 @@ a:hover {
 
 .bx-wrapper {
   position: relative;
-  margin: 0 auto 60px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -229,7 +229,7 @@ a:hover {
 
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
   z-index: 3000;
 }
@@ -251,7 +251,6 @@ a:hover {
   font-family: Arial;
   font-weight: bold;
   color: #666;
-  padding-top: 20px;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -461,7 +460,6 @@ footer  {
   background: #fff;
   color: #000;
   border-top: 1px #BEBEBE solid;
-  margin-top: 30px;
   padding-top: 30px;
 }
 

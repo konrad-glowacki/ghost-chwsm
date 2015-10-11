@@ -1,6 +1,32 @@
-/**
- * Main JS file for Casper behaviours
- */
+getNextDate = function() {
+  var result;
+  var currentTime = new Date();
+  var adorations = ['10/29/2015 19:00', '11/26/2015 19:00', '01/28/2016 19:00',
+    '02/25/2016 19:00', '03/31/2016 19:00', '04/28/2016 19:00', '05/26/2016 19:00', '06/30/2016 19:00'];
+
+  for (var i = 0; i < adorations.length; i++) {
+    var adorationTime = Date.parse(adorations[i]);
+
+    if (adorationTime > currentTime) {
+      result = adorations[i];
+      break;
+    }
+  }
+
+  return Date.parse(result);
+};
+
+function updateImageWidth() {
+  var $this = $(this),
+      contentWidth = $postContent.outerWidth(), // Width of the content
+      imageWidth = this.naturalWidth; // Original image resolution
+
+  if (imageWidth >= contentWidth) {
+    $this.addClass('full-img');
+  } else {
+    $this.removeClass('full-img');
+  }
+}
 
 /* globals jQuery, document */
 (function ($, sr, undefined) {
@@ -48,24 +74,10 @@
           pause: 4000
         });
 
-        $('#countdown').countdown({
-          timestamp: Date.parse('08/27/2015 18:30')
-        });
+        $('#countdown').countdown({ timestamp: getNextDate() });
 
         var $postContent = $(".post-content");
         $postContent.fitVids();
-
-        function updateImageWidth() {
-            var $this = $(this),
-                contentWidth = $postContent.outerWidth(), // Width of the content
-                imageWidth = this.naturalWidth; // Original image resolution
-
-            if (imageWidth >= contentWidth) {
-                $this.addClass('full-img');
-            } else {
-                $this.removeClass('full-img');
-            }
-        }
 
         var $img = $("img").on('load', updateImageWidth);
         function casperFullImg() {

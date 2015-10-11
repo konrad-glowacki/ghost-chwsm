@@ -47,8 +47,8 @@ body {
 }
 
 .top .topWrap, footer .footWrap {
-  width:990px;
-  margin:0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .top .logo {
@@ -61,28 +61,27 @@ body {
   float:left;
 }
 
-.top .menu {
+.top .nav {
   float:right;
-  color:#000;
+  color: #000;
   font-family: 'Open Sans', sans-serif;
   font-weight:600;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-size:12px;
-  height:12px;
-  padding:34px 0;
+  margin-top: 25px;
 }
 
-.top .menu li {
+.top .nav li {
   list-style:none;
   float:left;
 }
 
-.top .menu a {
+.top .nav a {
   padding-bottom:10px;
   margin:0 40px 0 0;
 }
 
-.top .menu a:hover, .top .menu .nav-current {
+.top .nav a:hover, .top .nav .nav-current a {
   border-bottom:4px #ffeb0e solid;
 }
 
@@ -458,23 +457,21 @@ a:hover {
 /* FOOTER */
 
 footer  {
-  width:100%;
-  height:100px;
-  background:#fff;
-  color:#000;
-  border-top:1px #BEBEBE solid;
-  margin-top:30px;
-  padding-top:30px;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  border-top: 1px #BEBEBE solid;
+  margin-top: 30px;
+  padding-top: 30px;
 }
 
 footer .footWrap .topRow .topRowleft .logo {
-  display:block;
-  text-indent:-9999px;
-  background:url('../images/logo.png') no-repeat center;
-  background-size: 100%;
-  width:116px;
-  height:21px;
-  float:left;
+  display: block;
+  text-indent: -9999px;
+  background: url('../images/logo.png') no-repeat center;
+  float: left;
+  height: 60px;
+  width: 200px;
 }
 
 footer div {
@@ -482,14 +479,13 @@ footer div {
   color:inherit !important;
 }
 
-footer .footWrap .topRow .topRowright .menu {
-  float:right;
-  color:#000;
+footer .footWrap .topRow .topRowright .nav {
+  float: right;
+  color: #000;
   font-family: 'Open Sans', sans-serif;
-  text-transform:uppercase;
-  font-size:11px;
-  height:12px;
-  padding:0;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 0;
 }
 
 footer .footWrap .bottomRow .bottomRowright li.pineterest {
@@ -522,7 +518,7 @@ footer .footWrap .bottomRow .bottomRowright li.twitter:hover {
   background-position:0 12px;
 }
 
-footer .footWrap .topRow .topRowright .menu a:hover {
+footer .footWrap .topRow .topRowright .nav a:hover {
   color:#FF210E;
 }
 
@@ -543,12 +539,12 @@ footer .footWrap .topRow .topRowleft {
   float:left;
 }
 
-footer .footWrap .topRow .topRowright .menu li {
+footer .footWrap .topRow .topRowright .nav li {
   list-style:none;
   float:left;
 }
 
-footer .footWrap .topRow .topRowright .menu a {
+footer .footWrap .topRow .topRowright .nav a {
   padding-bottom:10px;
   margin:0 20px 0 0;
 }

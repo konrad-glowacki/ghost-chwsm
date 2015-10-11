@@ -82,7 +82,7 @@ body {
   margin:0 40px 0 0;
 }
 
-.top .menu a:hover, .top .menu a.active {
+.top .menu a:hover, .top .menu .nav-current {
   border-bottom:4px #ffeb0e solid;
 }
 
